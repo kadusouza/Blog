@@ -14,8 +14,6 @@ soup = BeautifulSoup(page.text, 'html.parser')
 for div in soup.find_all("div", {'class':'avatar-image-container'}):
     div.decompose()
 
-#for div in soup.find_all("div", {'class':'comment-block'}):
-    #div.decompose()
 
 for div in soup.find_all("p", {'class':'comment-content'}):
     div.decompose()
@@ -49,13 +47,13 @@ for alunos in items_lista_ids:
 
 
 print(lista_ids)
-raw_content = raw_content[0].replace()
-raw_content = raw_content[0].split(',')
+filtered_content = raw_content[0]
+filtered_content = filtered_content.replace('[', '').replace(']', '')
+filtered_content = filtered_content.split(',')
+print(filtered_content)
 
-print(raw_content)
-#print(filred_content)
 
-dictAlunosIds = dict(zip(raw_content, lista_ids))
+dictAlunosIds = dict(zip(filtered_content, lista_ids))
 print(dictAlunosIds)
 
 

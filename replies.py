@@ -18,6 +18,17 @@ for div in soup.find_all("span", {'class': 'thread-count'}):
 for div in soup.find_all("span", {'class': 'comment-actions secondary-text'}):
     div.decompose()
 
+
+temporary_list = []#FOR TESTING PURPOSES
+temporary_id_dictionary = {'Enzo Fuji': 'c8720477246029385050', ' João Pedro de Faria': 'c8288796028292114243',
+                           ' Anônimo': 'c788449666887733230', ' Letícia Wong': 'c3162302219159244268',
+                           ' Gabriel Antonio': 'c2016595815497055439', ' Unknown': 'c7692978914926222781',
+                           ' Mayara Silva Alves': 'c8350160932393360596',
+                           ' Vinicius Hayashida Viana': 'c4253339910553678877',
+                           ' Gabriel Penna': 'c6601806323768593711'}
+print(temporary_id_dictionary)
+
+
 lista_alunos = soup.find(id='c8720477246029385050')
 items_lista_alunos = lista_alunos.find_all('a')
 qtd_respostas = - 1
