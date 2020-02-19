@@ -6,7 +6,7 @@ page = requests.get('https://econofin-bsi.blogspot.com/2019/09/o-proposito-deste
 
 soup = BeautifulSoup(page.text, 'html.parser')
 
-#Remove tags desnecessarias
+# Remove tags desnecessarias
 for div in soup.find_all("span", {'class':'datetime secondary-text'}):
     div.decompose()
 
@@ -22,15 +22,15 @@ for div in soup.find_all("div", {'class':'continue'}):
 remove_loadmore = soup.find("div", {'class':'loadmore hidden'})
 remove_loadmore.decompose()
 
-#Criando arquivo CSV
+# Criando arquivo CSV
 f = csv.writer(open('lista_alunos.csv', 'w'))
 
-#Limpa os objetos vazios
+# Limpa os objetos vazios
 for objeto_vazio in soup.find_all():
     if len(objeto_vazio.get_text(strip=True)) == 0:
         objeto_vazio.extract()
 
-#Procura todos alunos com login e os conta
+# Procura todos alunos com login e os conta
 lista_alunos = soup.find(class_='comments')
 items_lista_alunos = lista_alunos.find_all('a')
 count = 0
@@ -42,16 +42,17 @@ for alunos in items_lista_alunos:
     f.writerow(names)
 
 
-#Remove os alunos com login ja contados anteriormente
+# Remove os alunos com login ja contados anteriormente
 for div in soup.find_all('a'):
     div.decompose()
 
-#Limpa os objteos vazios
+# Limpa os objteos vazios
 for objeto_vazio in soup.find_all():
     if len(objeto_vazio.get_text(strip=True)) == 0:
         objeto_vazio.extract()
 
-#Procura pelo alunos sem login e os coloca na contagem
+# Procura pelo alunos sem login e os coloca na contagem
+# Lista todos os nomes no CSV de forma nao formatada
 lista_alunos_sem_login = soup.find(class_='comments')
 items_lista_alunos_sem_login = lista_alunos_sem_login.find_all('cite')
 for alunos_sem_login in items_lista_alunos_sem_login:
