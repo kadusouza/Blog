@@ -24,4 +24,4 @@ print(dictDeAlunos)
 # Escreve no CSV os alunos e a quantidade de interacoes que tiveram
 with open('qtd_interacoes_alunos.csv', 'w') as f:
     for key in dictDeAlunos.keys():
-        f.write("%s: %s\n" % (key, dictDeAlunos[key]))
+        f.write("%s, %s\n" % (key, dictDeAlunos[key]))

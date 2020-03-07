@@ -1,15 +1,15 @@
 import requests
 import re
 from bs4 import BeautifulSoup
-
+#Na real nao vou precisar desse script
 page = requests.get('https://econofin-bsi.blogspot.com/2019/09/o-proposito-deste-topico-e-discutir.html')
 
 soup = BeautifulSoup(page.text, 'html.parser')
 
-for div in soup.find_all("span", {'class':'datetime secondary-text'}):
+for div in soup.find_all("span", {'class': 'datetime secondary-text'}):
     div.decompose()
 
-for div in soup.find_all("a", {'class':'comment-reply'}):
+for div in soup.find_all("a", {'class': 'comment-reply'}):
     div.decompose()
 
 for div in soup.find_all("span", {'class': 'thread-count'}):
@@ -17,7 +17,6 @@ for div in soup.find_all("span", {'class': 'thread-count'}):
 
 for div in soup.find_all("span", {'class': 'comment-actions secondary-text'}):
     div.decompose()
-
 
 # Para testar, esses resultados serao obtidos do interacoes.py
 temporary_id_dictionary = {'Enzo Fuji': 'c8720477246029385050', 'João Pedro de Faria': 'c8288796028292114243',
@@ -30,7 +29,6 @@ temporary_id_dictionary = {'Enzo Fuji': 'c8720477246029385050', 'João Pedro de 
 temporary_names_list = ["Enzo Fuji", "João Pedro de Faria", "Anônimo", "Letícia Wong", "Gabriel Antonio", "Unknown",
                         "Mayara Silva Alves", "Vinicius Hayashida Viana", "Gabriel Penna"]
 
-
 qtd_respostas_dict = {}
 count = 0
 for resposta in temporary_names_list:
@@ -39,10 +37,7 @@ for resposta in temporary_names_list:
     qtd_respostas = - 1
     for alunos in items_lista_alunos:
         qtd_respostas = qtd_respostas + 1
-    qtd_respostas_dict.update({temporary_names_list[count] : qtd_respostas})
+    qtd_respostas_dict.update({temporary_names_list[count]: qtd_respostas})
     count = count + 1
 
-
 print(qtd_respostas_dict)
-
-

@@ -2,7 +2,7 @@ import requests
 import csv
 from bs4 import BeautifulSoup
 
-page = requests.get('https://econofin-bsi.blogspot.com/2019/09/o-proposito-deste-topico-e-discutir.html')
+page = requests.get('https://econofin-bsi.blogspot.com/2019/11/t10a1-analise-de-mercado-de-acoes.html')
 
 soup = BeautifulSoup(page.text, 'html.parser')
 
