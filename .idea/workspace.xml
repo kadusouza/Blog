@@ -29,7 +29,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.interacoes">
+  <component name="RunManager" selected="Python.texto_comentarios">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="Blog" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -51,27 +51,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="bs4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Blog" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\Kadu\AppData\Local\Programs\Python\Python37\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/bs4.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="true" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="interacoes" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Blog" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -85,27 +64,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/interacoes.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="true" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="lxml_Xpath" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Blog" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lxml_Xpath.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="true" />
@@ -177,21 +135,41 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="texto_comentarios" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Blog" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Kadu\AppData\Local\Programs\Python\Python37\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/texto_comentarios.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python.bs4" />
-      <item itemvalue="Python.lxml_Xpath" />
-      <item itemvalue="Python.processar_alunos" />
-      <item itemvalue="Python.soup" />
       <item itemvalue="Python.interacoes" />
+      <item itemvalue="Python.processar_alunos" />
       <item itemvalue="Python.replies" />
+      <item itemvalue="Python.soup" />
+      <item itemvalue="Python.texto_comentarios" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.interacoes" />
+        <item itemvalue="Python.texto_comentarios" />
         <item itemvalue="Python.processar_alunos" />
         <item itemvalue="Python.soup" />
+        <item itemvalue="Python.interacoes" />
         <item itemvalue="Python.replies" />
-        <item itemvalue="Python.lxml_Xpath" />
       </list>
     </recent_temporary>
   </component>
@@ -213,6 +191,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="679" y="146" key="#Main/0.0.1920.1040@0.0.1920.1040" timestamp="1581264857592" />
+    <state x="552" y="178" key="#Notifications" timestamp="1583610303053">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1583610303053" />
     <state x="414" y="174" width="1092" height="707" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581266188004">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -229,33 +211,37 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="282" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1581262993515" />
-    <state width="1899" height="215" key="GridCell.Tab.0.bottom" timestamp="1583585800878">
+    <state width="1899" height="231" key="GridCell.Tab.0.bottom" timestamp="1584198242040">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="215" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583585800878" />
-    <state width="1899" height="215" key="GridCell.Tab.0.center" timestamp="1583585800878">
+    <state width="1899" height="231" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584198242040" />
+    <state width="1899" height="231" key="GridCell.Tab.0.center" timestamp="1584198242040">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="215" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583585800878" />
-    <state width="1899" height="215" key="GridCell.Tab.0.left" timestamp="1583585800878">
+    <state width="1899" height="231" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584198242040" />
+    <state width="1899" height="231" key="GridCell.Tab.0.left" timestamp="1584198242040">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="215" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583585800878" />
-    <state width="1899" height="215" key="GridCell.Tab.0.right" timestamp="1583585800878">
+    <state width="1899" height="231" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584198242040" />
+    <state width="1899" height="231" key="GridCell.Tab.0.right" timestamp="1584198242040">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="215" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583585800878" />
+    <state width="1899" height="231" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584198242040" />
+    <state x="583" y="185" key="Registry" timestamp="1583797566333">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="583" y="185" key="Registry/0.0.1920.1040@0.0.1920.1040" timestamp="1583797566333" />
     <state x="463" y="165" key="SettingsEditor" timestamp="1581263444779">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="463" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1581263444779" />
-    <state x="662" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1583584052845">
+    <state x="662" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1584197752748">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="662" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583584052845" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1581280004042">
+    <state x="662" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584197752748" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1583797532724">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1581280004042" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1583797532724" />
   </component>
 </project>

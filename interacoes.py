@@ -42,7 +42,7 @@ items_lista_alunos = lista_alunos.find_all('ol')
 for alunos in items_lista_alunos:
     raw_content.append(remove_html_tags(str(alunos.contents)))
 
-#Foramata o conteudo obtido acima
+# Foramata o conteudo obtido acima
 filtered_content = raw_content[0]
 filtered_content = filtered_content.replace('[', '').replace(']', '')
 filtered_content = filtered_content.split(',')

@@ -9,7 +9,7 @@ with open('lista_alunos.csv', 'r') as lista_alunos:
             if linha[0] not in alunos:
                 alunos.append(linha[0])
 
-dictDeAlunos = {i: 1 for i in alunos}
+dictDeAlunos = {i: 0 for i in alunos}
 
 with open('lista_alunos.csv', 'r') as lista_alunos:
     reader = csv.reader(lista_alunos)
@@ -18,6 +18,10 @@ with open('lista_alunos.csv', 'r') as lista_alunos:
             if ''.join(linha).strip():
                 if linha[0] in dictDeAlunos:
                     dictDeAlunos[linha[0]] += 1
+
+for aluno in alunos:
+    if dictDeAlunos[aluno] == 0:
+        dictDeAlunos[aluno] += 1
 
 print(dictDeAlunos)
 
