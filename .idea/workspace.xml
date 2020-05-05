@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ddc72be3-a40a-4731-9c95-22325502b45b" name="Default Changelist" comment="" />
+    <list default="true" id="ddc72be3-a40a-4731-9c95-22325502b45b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/TextUtil.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exec.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qtd_conceitos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Blog.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interacoes.py" beforeDir="false" afterPath="$PROJECT_DIR$/interacoes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soup.py" beforeDir="false" afterPath="$PROJECT_DIR$/soup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/texto_comentarios.py" beforeDir="false" afterPath="$PROJECT_DIR$/texto_comentarios.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,7 +39,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.texto_comentarios">
+  <component name="RunManager" selected="Python.exec">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="Blog" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -43,6 +53,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="exec" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Blog" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Kadu\AppData\Local\Programs\Python\Python37\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exec.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="true" />
@@ -93,7 +124,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="replies" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="qtd_conceitos" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Blog" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -105,28 +136,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/replies.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="true" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="soup" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Blog" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\Kadu\AppData\Local\Programs\Python\Python37\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/soup.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/qtd_conceitos.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="true" />
@@ -159,17 +169,17 @@
     <list>
       <item itemvalue="Python.interacoes" />
       <item itemvalue="Python.processar_alunos" />
-      <item itemvalue="Python.replies" />
-      <item itemvalue="Python.soup" />
       <item itemvalue="Python.texto_comentarios" />
+      <item itemvalue="Python.qtd_conceitos" />
+      <item itemvalue="Python.exec" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.exec" />
+        <item itemvalue="Python.qtd_conceitos" />
         <item itemvalue="Python.texto_comentarios" />
-        <item itemvalue="Python.processar_alunos" />
-        <item itemvalue="Python.soup" />
         <item itemvalue="Python.interacoes" />
-        <item itemvalue="Python.replies" />
+        <item itemvalue="Python.processar_alunos" />
       </list>
     </recent_temporary>
   </component>
@@ -211,34 +221,87 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="282" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1581262993515" />
-    <state width="1899" height="231" key="GridCell.Tab.0.bottom" timestamp="1584198242040">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1899" height="247" key="GridCell.Tab.0.bottom" timestamp="1585860320802">
+      <screen x="-112" y="-1057" width="1920" height="1057" />
     </state>
+    <state width="1659" height="247" key="GridCell.Tab.0.bottom/0.0.1680.1050/-112.-1057.1920.1057@0.0.1680.1050" timestamp="1585782894795" />
+    <state width="1659" height="247" key="GridCell.Tab.0.bottom/0.0.1680.1050/-112.-1080.1920.1080@0.0.1680.1050" timestamp="1585782851054" />
     <state width="1899" height="231" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584198242040" />
-    <state width="1899" height="231" key="GridCell.Tab.0.center" timestamp="1584198242040">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1604" height="284" key="GridCell.Tab.0.bottom/53.23.1627.1027@53.23.1627.1027" timestamp="1585006050884" />
+    <state width="1899" height="247" key="GridCell.Tab.0.bottom/55.23.1625.1027/-112.-1057.1920.1057@-112.-1057.1920.1057" timestamp="1585860320802" />
+    <state width="1604" height="247" key="GridCell.Tab.0.bottom/55.23.1625.1027/-112.-1057.1920.1057@55.23.1625.1027" timestamp="1585846017755" />
+    <state width="1604" height="284" key="GridCell.Tab.0.bottom/55.23.1625.1027@55.23.1625.1027" timestamp="1585065448258" />
+    <state width="1899" height="247" key="GridCell.Tab.0.center" timestamp="1585860320802">
+      <screen x="-112" y="-1057" width="1920" height="1057" />
     </state>
+    <state width="1659" height="247" key="GridCell.Tab.0.center/0.0.1680.1050/-112.-1057.1920.1057@0.0.1680.1050" timestamp="1585782894794" />
+    <state width="1659" height="247" key="GridCell.Tab.0.center/0.0.1680.1050/-112.-1080.1920.1080@0.0.1680.1050" timestamp="1585782851052" />
     <state width="1899" height="231" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584198242040" />
-    <state width="1899" height="231" key="GridCell.Tab.0.left" timestamp="1584198242040">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1604" height="284" key="GridCell.Tab.0.center/53.23.1627.1027@53.23.1627.1027" timestamp="1585006050883" />
+    <state width="1899" height="247" key="GridCell.Tab.0.center/55.23.1625.1027/-112.-1057.1920.1057@-112.-1057.1920.1057" timestamp="1585860320802" />
+    <state width="1604" height="247" key="GridCell.Tab.0.center/55.23.1625.1027/-112.-1057.1920.1057@55.23.1625.1027" timestamp="1585846017754" />
+    <state width="1604" height="284" key="GridCell.Tab.0.center/55.23.1625.1027@55.23.1625.1027" timestamp="1585065448257" />
+    <state width="1899" height="247" key="GridCell.Tab.0.left" timestamp="1585860320801">
+      <screen x="-112" y="-1057" width="1920" height="1057" />
     </state>
+    <state width="1659" height="247" key="GridCell.Tab.0.left/0.0.1680.1050/-112.-1057.1920.1057@0.0.1680.1050" timestamp="1585782894793" />
+    <state width="1659" height="247" key="GridCell.Tab.0.left/0.0.1680.1050/-112.-1080.1920.1080@0.0.1680.1050" timestamp="1585782851051" />
     <state width="1899" height="231" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584198242040" />
-    <state width="1899" height="231" key="GridCell.Tab.0.right" timestamp="1584198242040">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1604" height="284" key="GridCell.Tab.0.left/53.23.1627.1027@53.23.1627.1027" timestamp="1585006050882" />
+    <state width="1899" height="247" key="GridCell.Tab.0.left/55.23.1625.1027/-112.-1057.1920.1057@-112.-1057.1920.1057" timestamp="1585860320801" />
+    <state width="1604" height="247" key="GridCell.Tab.0.left/55.23.1625.1027/-112.-1057.1920.1057@55.23.1625.1027" timestamp="1585846017753" />
+    <state width="1604" height="284" key="GridCell.Tab.0.left/55.23.1625.1027@55.23.1625.1027" timestamp="1585065448256" />
+    <state width="1899" height="247" key="GridCell.Tab.0.right" timestamp="1585860320802">
+      <screen x="-112" y="-1057" width="1920" height="1057" />
     </state>
+    <state width="1659" height="247" key="GridCell.Tab.0.right/0.0.1680.1050/-112.-1057.1920.1057@0.0.1680.1050" timestamp="1585782894795" />
+    <state width="1659" height="247" key="GridCell.Tab.0.right/0.0.1680.1050/-112.-1080.1920.1080@0.0.1680.1050" timestamp="1585782851053" />
     <state width="1899" height="231" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584198242040" />
+    <state width="1604" height="284" key="GridCell.Tab.0.right/53.23.1627.1027@53.23.1627.1027" timestamp="1585006050883" />
+    <state width="1899" height="247" key="GridCell.Tab.0.right/55.23.1625.1027/-112.-1057.1920.1057@-112.-1057.1920.1057" timestamp="1585860320802" />
+    <state width="1604" height="247" key="GridCell.Tab.0.right/55.23.1625.1027/-112.-1057.1920.1057@55.23.1625.1027" timestamp="1585846017754" />
+    <state width="1604" height="284" key="GridCell.Tab.0.right/55.23.1625.1027@55.23.1625.1027" timestamp="1585065448257" />
+    <state width="1659" height="363" key="GridCell.Tab.1.bottom" timestamp="1585534725554">
+      <screen x="55" y="23" width="1625" height="1027" />
+    </state>
+    <state width="1659" height="363" key="GridCell.Tab.1.bottom/0.0.1680.1050/-112.-1080.1920.1080@0.0.1680.1050" timestamp="1585419840570" />
+    <state width="1659" height="363" key="GridCell.Tab.1.bottom/55.23.1625.1027/-112.-1057.1920.1057@55.23.1625.1027" timestamp="1585534725554" />
+    <state width="1659" height="363" key="GridCell.Tab.1.center" timestamp="1585534725553">
+      <screen x="55" y="23" width="1625" height="1027" />
+    </state>
+    <state width="1659" height="363" key="GridCell.Tab.1.center/0.0.1680.1050/-112.-1080.1920.1080@0.0.1680.1050" timestamp="1585419840569" />
+    <state width="1659" height="363" key="GridCell.Tab.1.center/55.23.1625.1027/-112.-1057.1920.1057@55.23.1625.1027" timestamp="1585534725553" />
+    <state width="1659" height="363" key="GridCell.Tab.1.left" timestamp="1585534725553">
+      <screen x="55" y="23" width="1625" height="1027" />
+    </state>
+    <state width="1659" height="363" key="GridCell.Tab.1.left/0.0.1680.1050/-112.-1080.1920.1080@0.0.1680.1050" timestamp="1585419840568" />
+    <state width="1659" height="363" key="GridCell.Tab.1.left/55.23.1625.1027/-112.-1057.1920.1057@55.23.1625.1027" timestamp="1585534725553" />
+    <state width="1659" height="363" key="GridCell.Tab.1.right" timestamp="1585534725554">
+      <screen x="55" y="23" width="1625" height="1027" />
+    </state>
+    <state width="1659" height="363" key="GridCell.Tab.1.right/0.0.1680.1050/-112.-1080.1920.1080@0.0.1680.1050" timestamp="1585419840569" />
+    <state width="1659" height="363" key="GridCell.Tab.1.right/55.23.1625.1027/-112.-1057.1920.1057@55.23.1625.1027" timestamp="1585534725554" />
     <state x="583" y="185" key="Registry" timestamp="1583797566333">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="583" y="185" key="Registry/0.0.1920.1040@0.0.1920.1040" timestamp="1583797566333" />
-    <state x="463" y="165" key="SettingsEditor" timestamp="1581263444779">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="447" y="186" key="SettingsEditor" timestamp="1584656068673">
+      <screen x="55" y="23" width="1625" height="1027" />
     </state>
     <state x="463" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1581263444779" />
-    <state x="662" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1584197752748">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="447" y="186" key="SettingsEditor/55.23.1625.1027@55.23.1625.1027" timestamp="1584656068673" />
+    <state x="-1227" y="376" key="com.intellij.ide.util.TipDialog" timestamp="1588636363955">
+      <screen x="-1873" y="23" width="1873" height="1057" />
     </state>
+    <state x="579" y="351" key="com.intellij.ide.util.TipDialog/0.0.1680.1050/-112.-1080.1920.1080@0.0.1680.1050" timestamp="1585844679967" />
     <state x="662" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584197752748" />
+    <state x="-1227" y="376" key="com.intellij.ide.util.TipDialog/0.23.1680.1027/-1873.23.1873.1057@-1873.23.1873.1057" timestamp="1588636363955" />
+    <state x="615" y="366" key="com.intellij.ide.util.TipDialog/55.23.1625.1027/-112.-1057.1920.1057@55.23.1625.1027" timestamp="1585407836719" />
+    <state x="615" y="366" key="com.intellij.ide.util.TipDialog/55.23.1625.1027@55.23.1625.1027" timestamp="1585002413292" />
+    <state x="534" y="172" width="667" height="729" key="find.popup" timestamp="1584656091003">
+      <screen x="55" y="23" width="1625" height="1027" />
+    </state>
+    <state x="534" y="172" width="667" height="729" key="find.popup/55.23.1625.1027@55.23.1625.1027" timestamp="1584656091003" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1583797532724">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

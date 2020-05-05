@@ -1,16 +1,18 @@
 import requests
 import csv
 from bs4 import BeautifulSoup
+from TextUtil import remove_html_tags
+
 
 # Quantidade de comentarios principais e de respostas que os alunos fizeram
 
-def remove_html_tags(text):
-    import re
-    clean = re.compile('<.*?>')
-    return re.sub(clean, '', text)
+with open('topico.csv', 'r') as arquivo_topico:
+    reader = csv.reader(arquivo_topico)
+    for linha in reader:
+        topico = linha[0]
 
 
-page = requests.get('https://econofin-bsi.blogspot.com/2019/11/t10a1-analise-de-mercado-de-acoes.html')
+page = requests.get(topico)
 
 soup = BeautifulSoup(page.text, 'html.parser')
 

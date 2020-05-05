@@ -2,7 +2,12 @@ import requests
 import csv
 from bs4 import BeautifulSoup
 
-page = requests.get('https://econofin-bsi.blogspot.com/2019/11/t10a1-analise-de-mercado-de-acoes.html')
+with open('topico.csv', 'r') as arquivo_topico:
+    reader = csv.reader(arquivo_topico)
+    for linha in reader:
+        topico = linha[0]
+
+page = requests.get(topico)
 
 soup = BeautifulSoup(page.text, 'html.parser')
 
