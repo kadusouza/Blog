@@ -2,7 +2,7 @@ import csv
 
 alunos = []
 count = 0
-with open('lista_alunos.csv', 'r') as lista_alunos:
+with open('../lista_alunos.csv', 'r') as lista_alunos:
     reader = csv.reader(lista_alunos)
     for linha in reader:
         if ''.join(linha).strip():
@@ -11,7 +11,7 @@ with open('lista_alunos.csv', 'r') as lista_alunos:
 
 dictDeAlunos = {i: 0 for i in alunos}
 
-with open('lista_alunos.csv', 'r') as lista_alunos:
+with open('../lista_alunos.csv', 'r') as lista_alunos:
     reader = csv.reader(lista_alunos)
     for row in reader:
         for linha in reader:
@@ -26,6 +26,6 @@ for aluno in alunos:
 print(dictDeAlunos)
 
 # Escreve no CSV os alunos e a quantidade de interacoes que tiveram
-with open('qtd_interacoes_alunos.csv', 'w') as f:
+with open('../qtd_interacoes_alunos.csv', 'w') as f:
     for key in dictDeAlunos.keys():
         f.write("%s, %s\n" % (key, dictDeAlunos[key]))

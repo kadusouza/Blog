@@ -1,8 +1,9 @@
 import requests
 import csv
+import BeautifulSoupUtil
 from bs4 import BeautifulSoup
 
-with open('topico.csv', 'r') as arquivo_topico:
+with open('../topico.csv', 'r') as arquivo_topico:
     reader = csv.reader(arquivo_topico)
     for linha in reader:
         topico = linha[0]
@@ -12,23 +13,16 @@ page = requests.get(topico)
 soup = BeautifulSoup(page.text, 'html.parser')
 
 # Remove tags desnecessarias
-for div in soup.find_all("span", {'class':'datetime secondary-text'}):
-    div.decompose()
-
-for div in soup.find_all("span", {'class':'comment-actions secondary-text'}):
-    div.decompose()
-
-for div in soup.find_all("span", {'class':'thread-toggle thread-expanded'}):
-    div.decompose()
-
-for div in soup.find_all("div", {'class':'continue'}):
-    div.decompose()
+BeautifulSoupUtil.decomposeSpanDatetimeSecondaryText(soup)
+BeautifulSoupUtil.decomposeSpanCommentactionsSecondaryText(soup)
+BeautifulSoupUtil.decomposeSpanThreadToggleThreadExpanded(soup)
+BeautifulSoupUtil.decomposeDivContinue(soup)
 
 remove_loadmore = soup.find("div", {'class':'loadmore hidden'})
 remove_loadmore.decompose()
 
 # Criando arquivo CSV
-f = csv.writer(open('lista_alunos.csv', 'w'))
+f = csv.writer(open('../lista_alunos.csv', 'w'))
 
 # Limpa os objetos vazios
 for objeto_vazio in soup.find_all():

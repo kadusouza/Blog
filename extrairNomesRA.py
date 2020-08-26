@@ -1,5 +1,6 @@
 import requests
 import csv
+import re
 import TextUtil
 import BeautifulSoupUtil
 from bs4 import BeautifulSoup
@@ -42,45 +43,28 @@ items_lista_comentarios = lista_conteudo.find_all('p')
 for comentario in items_lista_comentarios:
     comentarios.append(TextUtil.listToString(comentario.contents))
 
-# Lista com os nomes sem repeticao
-unique_names = []
-with open('../lista_alunos.csv', 'r') as lista_alunos:
-    reader = csv.reader(lista_alunos)
-    for linha in reader:
-        if ''.join(linha).strip():
-            if linha[0] not in unique_names:
-                unique_names.append(linha[0])
-
-dictDeAlunos = {i: [] for i in unique_names}
-
+ra = []
 count = 0
-# Adiciona a quantidade de palavras de cada interacao
-for aluno in nomes:
-    value = len(comentarios[count].split())
-    dictDeAlunos[nomes[count]].append(value)
+for comment in comentarios:
+    ra.append(re.findall(r'(\d{6})', comentarios[count]))
     count += 1
 
+dictDeAlunosRA = {i: [] for i in nomes}
 
-for aluno in dictDeAlunos:
-    total = sum(dictDeAlunos[aluno])
-    num_elementos = len(dictDeAlunos[aluno])
-    media = total / num_elementos
-    dictDeAlunos[aluno].append(media)
+count = 0
+for nome in nomes:
+    if len(dictDeAlunosRA.get(nomes[count])) == 0:
+        dictDeAlunosRA[nome].append(ra[count])
+    elif dictDeAlunosRA.get(nome)[0] != ra[count]:
+        dictDeAlunosRA[nome].append(ra[count])
+    count += 1
 
-print(dictDeAlunos)
+# Escreve no CSV os alunos e a quantidade de interacoes que tiveram
+with open('aluno_ra.csv', 'w') as f:
+    for key in dictDeAlunosRA.keys():
+        f.write("%s, %s\n" % (key, dictDeAlunosRA[key]))
 
-# Escreve no CSV os alunos, a quantidade de palavras por comentario e por ultimo a média de palavras usadas
-with open('../qtd_palavras.csv', 'w') as f:
-    for key in dictDeAlunos.keys():
-        i = 0
-        tamanhoReal = len(dictDeAlunos[key]) - 1
-        f.write("%s, " % key)
-        while i <= tamanhoReal:
-            print(tamanhoReal)
-            print(i)
-            if i == tamanhoReal:
-                f.write("%.2f" % dictDeAlunos[key][i])
-                f.write("\n")
-            else:
-                f.write("%.0f, " % dictDeAlunos[key][i])
-            i += 1
+print(dictDeAlunosRA)
+
+
+
